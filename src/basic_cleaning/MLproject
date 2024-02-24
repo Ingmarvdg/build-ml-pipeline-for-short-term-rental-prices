@@ -1,0 +1,32 @@
+name: basic_cleaning
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      input_artifact:
+        description: input data
+        type: string
+
+      output_artifact:
+        description: output artifact name
+        type: string
+
+      output_type:
+        description: Type of the output artifact. This will be used to categorize the artifact in the W&B
+                     interface
+        type: string
+
+      output_description:
+        description: A brief description of the output artifact
+        type: string
+
+      min_price:
+        description: minimum price for cleaning.
+        type: integer
+
+      max_price:
+        description: maximum price for cleaning.
+        type: integer
+
+    command: "python run.py {input_artifact} {output_artifact} {output_type} {output_description} {min_price} {max_price}"

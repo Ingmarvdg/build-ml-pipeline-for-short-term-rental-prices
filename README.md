@@ -243,7 +243,7 @@ notebook can be understood by other people like your colleagues
     import wandb
     import pandas as pd
     
-    run = wandb.init(project="nyc_airbnb", group="eda", save_code=True)
+    run = wandb.init(project="nyc_airbnb", job_type="eda", save_code=True)
     local_path = wandb.use_artifact("sample.csv:latest").file()
     df = pd.read_csv(local_path)
     ```
