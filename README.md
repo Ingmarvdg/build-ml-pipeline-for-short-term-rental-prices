@@ -8,6 +8,8 @@ In this project you will build such a pipeline.
 
 Link to submission repository: https://github.com/Ingmarvdg/build-ml-pipeline-for-short-term-rental-prices
 
+Link to wandb project: https://wandb.ai/ingmarvdg/nyc_airbnb/overview?workspace=user-ingmarvdg
+
 ## Table of contents
 
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
